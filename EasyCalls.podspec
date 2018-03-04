@@ -16,7 +16,8 @@ Pod::Spec.new do |s|
     s.social_media_url      = 'https://twitter.com/eremenko_maxim/'
     s.ios.deployment_target = '8.0'
     s.source_files          = 'Classes/Calls/Common**/*.swift'
-    s.pod_target_xcconfig   = { 'SWIFT_WHOLE_MODULE_OPTIMIZATION' => 'YES' }
+    s.pod_target_xcconfig   = { 'SWIFT_WHOLE_MODULE_OPTIMIZATION' => 'YES',
+                                'SWIFT_VERSION' => '4.0'}
 
     s.subspec 'Queues' do |queues|
         queues.source_files = 'Classes/Calls/Queues/**/*.swift'
