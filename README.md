@@ -1,6 +1,6 @@
 # EasyCalls
 
-[![CI Status](http://img.shields.io/travis/devmeremenko/EasyCalls.svg?style=flat)](https://travis-ci.org/devmeremenko/EasyCalls)
+[![CI Status](http://img.shields.io/travis/devmeremenko/EasyCalls.svg?style=flat)](https://travis-ci.org/devMEremenko/EasyCalls.svg?branch=master)
 [![Version](https://img.shields.io/cocoapods/v/EasyCalls.svg?style=flat)](http://cocoapods.org/pods/EasyCalls)
 [![License](https://img.shields.io/cocoapods/l/EasyCalls.svg?style=flat)](http://cocoapods.org/pods/EasyCalls)
 [![Platform](https://img.shields.io/cocoapods/p/EasyCalls.svg?style=flat)](http://cocoapods.org/pods/EasyCalls)
