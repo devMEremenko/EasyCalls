@@ -26,12 +26,12 @@ Pod::Spec.new do |s|
         queues.source_files = 'Classes/Calls/Queues/**/*.swift'
     end
 
-    s.default_subspec = 'Common', 'Queues'
+    s.default_subspec = "Common", "Queues"
 
     s.subspec 'Realm' do |realm|
-        realm.source_files = 'Classes/Calls/Realm/**/*.swift',
-                             'Classes/Calls/Common**/*.swift'
+        realm.dependency 'EasyCalls/Common'
         realm.dependency 'RealmSwift', '~> 3.1.1'
+        realm.source_files = 'Classes/Calls/Realm/**/*.swift',
     end
 
     s.frameworks = 'Foundation'
