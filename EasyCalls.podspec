@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
     end
 
     s.subspec 'Realm' do |realm|
-        realm.source_files = 'Classes/Calls/Realm/**/*.swift'
+        realm.source_files = 'Classes/Calls/Realm/**/*.swift', 'Classes/Calls/Common**/*.swift'
         realm.dependency 'RealmSwift', '~> 3.1.1'
     end
 
