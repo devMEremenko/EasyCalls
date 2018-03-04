@@ -9,6 +9,7 @@
 import Foundation
 
 typealias ThrowableClosure = () throws -> ()
+typealias ErrorClosure = (Swift.Error) -> ()
 
 func tryCatch(_ closure: ThrowableClosure,
               _ failure: ErrorClosure? = nil) {

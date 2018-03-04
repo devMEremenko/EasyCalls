@@ -9,7 +9,6 @@
 import Foundation
 
 typealias EmptyClosure = () -> ()
-typealias ErrorClosure = (Swift.Error) -> ()
 
 private let mainQueueKey = DispatchSpecificKey<String>()
 private let mainQueueValue = "DispatchSpecificKey.mainQueueValue"
