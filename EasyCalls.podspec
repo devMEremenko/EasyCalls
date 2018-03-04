@@ -15,11 +15,15 @@ Pod::Spec.new do |s|
     s.source                = { :git => 'https://github.com/devmeremenko/EasyCalls.git' }
     s.social_media_url      = 'https://twitter.com/eremenko_maxim/'
     s.ios.deployment_target = '8.0'
-    s.source_files          = 'Classes/Calls/Common**/*.swift', 'Classes/Calls/Queues/**/*.swift'
+    s.source_files          = 'Classes/Calls/Common**/*.swift'
     s.pod_target_xcconfig   = { 'SWIFT_WHOLE_MODULE_OPTIMIZATION' => 'YES' }
 
+    s.subspec 'Queues' do |queues|
+        queues.source_files = 'Classes/Calls/Queues/**/*.swift'
+    end
+
     s.subspec 'Realm' do |realm|
-        realm.source_files = 'Classes/Calls/Realm/**/*.swift', 'Classes/Calls/Common/**/*.swift'
+        realm.source_files = 'Classes/Calls/Realm/**/*.swift'
         realm.dependency 'RealmSwift', '~> 3.1.1'
     end
 
