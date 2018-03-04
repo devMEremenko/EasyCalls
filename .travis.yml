@@ -15,5 +15,6 @@ before_install:
 - cd ..
 - pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/EasyCalls.xcworkspace -scheme EasyCalls -sdk iphonesimulator11.2 ONLY_ACTIVE_ARCH=NO | xcpretty
+
+- xcodebuild test -workspace EasyCalls.xcworkspace -scheme EasyCalls -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 - pod lib lint
