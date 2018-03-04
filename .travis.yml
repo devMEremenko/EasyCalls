@@ -15,6 +15,6 @@ before_install:
 - pod install
 script:
 
+- xcodebuild test -workspace 'EasyCalls.xcworkspace' -scheme EasyCalls-Test -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 - cd ..
-- xcodebuild test -workspace './EasyCalls.xcworkspace' -scheme EasyCalls-Test -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-- pod lib lint
+- pod lib lint --allow-warnings
