@@ -18,18 +18,18 @@ Pod::Spec.new do |s|
     s.pod_target_xcconfig   = { 'SWIFT_WHOLE_MODULE_OPTIMIZATION' => 'YES',
                                 'SWIFT_VERSION' => '4.0'}
 
-    s.subspec 'Common' do |common|
-        common.source_files = 'Classes/Calls/Common**/*.swift'
+    s.subspec 'TryCatch' do |tryCatch|
+        tryCatch.source_files = 'Classes/Calls/TryCatch**/*.swift'
     end
 
     s.subspec 'Queues' do |queues|
         queues.source_files = 'Classes/Calls/Queues/**/*.swift'
     end
 
-    s.default_subspec = "Common", "Queues"
+    s.default_subspec = "TryCatch", "Queues"
 
     s.subspec 'Realm' do |realm|
-        realm.dependency 'EasyCalls/Common'
+        realm.dependency 'EasyCalls/TryCatch'
         realm.dependency 'RealmSwift', '~> 3.1.1'
         realm.source_files = 'Classes/Calls/Realm/**/*.swift'
     end

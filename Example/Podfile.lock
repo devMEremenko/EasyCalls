@@ -1,10 +1,12 @@
 PODS:
-  - EasyCalls (1.0.0):
-    - EasyCalls/Queues (= 1.0.0)
-    - EasyCalls/Realm (= 1.0.0)
-  - EasyCalls/Queues (1.0.0)
-  - EasyCalls/Realm (1.0.0):
+  - EasyCalls (1.0.2):
+    - EasyCalls/Queues (= 1.0.2)
+    - EasyCalls/TryCatch (= 1.0.2)
+  - EasyCalls/Queues (1.0.2)
+  - EasyCalls/Realm (1.0.2):
+    - EasyCalls/TryCatch
     - RealmSwift (~> 3.1.1)
+  - EasyCalls/TryCatch (1.0.2)
   - Nimble (7.0.3)
   - Quick (1.2.0)
   - Realm (3.1.1):
@@ -15,6 +17,7 @@ PODS:
 
 DEPENDENCIES:
   - EasyCalls (from `../`)
+  - EasyCalls/Realm (from `../`)
   - Nimble (~> 7.0.2)
   - Quick (~> 1.2.0)
 
@@ -23,12 +26,12 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  EasyCalls: 31b5e0e6635a7300a74ccfb6778b9621d450e3fe
+  EasyCalls: 21bb4e3fdec4929cfb6f46b2ca503700ff7606eb
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   Realm: 42d1c38a5b1bbcc828b48a7ce702cb86fc68adf4
   RealmSwift: d31937ca6a6ee54acde64ec839523c0a3c04924b
 
-PODFILE CHECKSUM: 75515f2799b4d1ac1a10c4bdcb415783e5c7cb67
+PODFILE CHECKSUM: b01ab69849f45a8abb3eb95d04e3ba873bb269cc
 
 COCOAPODS: 1.4.0

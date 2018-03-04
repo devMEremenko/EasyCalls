@@ -7,6 +7,7 @@ inhibit_all_warnings!
 target 'EasyCalls_Tests' do
 
   pod 'EasyCalls', :path => '../'
+  pod 'EasyCalls/Realm', :path => '../'
   
   #TEST
   pod 'Quick', '~> 1.2.0'
