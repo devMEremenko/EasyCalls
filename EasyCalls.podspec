@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
     s.subspec 'Realm' do |realm|
         realm.dependency 'EasyCalls/Common'
         realm.dependency 'RealmSwift', '~> 3.1.1'
-        realm.source_files = 'Classes/Calls/Realm/**/*.swift',
+        realm.source_files = 'Classes/Calls/Realm/**/*.swift'
     end
 
     s.frameworks = 'Foundation'
