@@ -12,8 +12,7 @@ before_install:
 - gem install cocoapods # Since Travis is not always on latest version
 - cd Example
 - pod update
-- cd ..
-- pod install --project-directory=Example
+- pod install
 script:
 
 - xcodebuild test -workspace EasyCalls.xcworkspace -scheme EasyCalls -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
