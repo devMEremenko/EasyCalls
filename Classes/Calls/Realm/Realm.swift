@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-extension Realm {
+public extension Realm {
     
     typealias Transaction = (Realm) -> ()
     
@@ -42,3 +42,4 @@ extension Realm {
         }, errorClosure)
     }
 }
+

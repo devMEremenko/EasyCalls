@@ -8,11 +8,11 @@
 
 import Foundation
 
-typealias ThrowableClosure = () throws -> ()
-typealias ErrorClosure = (Swift.Error) -> ()
+public typealias ThrowableClosure = () throws -> ()
+public typealias ErrorClosure = (Swift.Error) -> ()
 
-func tryCatch(_ closure: ThrowableClosure,
-              _ failure: ErrorClosure? = nil) {
+public func tryCatch(_ closure: ThrowableClosure,
+                     _ failure: ErrorClosure? = nil) {
     do {
         try closure()
     } catch let error {

@@ -8,25 +8,25 @@
 
 import Foundation
 
-typealias EmptyClosure = () -> ()
+public typealias EmptyClosure = () -> ()
 
 private let mainQueueKey = DispatchSpecificKey<String>()
 private let mainQueueValue = "DispatchSpecificKey.mainQueueValue"
 
 //MARK: Main
 
-extension DispatchQueue {
+public extension DispatchQueue {
     
     static var isMainQueue: Bool {
         return DispatchQueue.getSpecific(key: mainQueueKey) != nil
     }
 }
 
-func toMain(_ block: @escaping EmptyClosure) {
+public func toMain(_ block: @escaping EmptyClosure) {
     
     /**
-        Being on the main thread does not guarantee to be in the main queue.
-        It means, if the current queue is not main, the execution will be moved to the main queue.
+     Being on the main thread does not guarantee to be in the main queue.
+     It means, if the current queue is not main, the execution will be moved to the main queue.
      **/
     
     DispatchQueue.main.setSpecific(key: mainQueueKey, value: mainQueueValue)
@@ -53,8 +53,8 @@ func toMain(_ block: @escaping EmptyClosure) {
 
 //MARK: - Background
 
-func toBackground(qos: DispatchQoS = .default,
-                  _ block: @escaping EmptyClosure) {
+public func toBackground(qos: DispatchQoS = .default,
+                         _ block: @escaping EmptyClosure) {
     
     toBackground(label: "",
                  qos: qos,
@@ -64,37 +64,36 @@ func toBackground(qos: DispatchQoS = .default,
                  block)
 }
 
-func toBackground(label: String = "",
-                  qos: DispatchQoS = .default,
-                  attr: DispatchQueue.Attributes = .concurrent,
-                  frequency: DispatchQueue.AutoreleaseFrequency = .inherit,
-                  target: DispatchQueue? = nil,
-                  _ block: @escaping EmptyClosure) {
+public func toBackground(label: String = "",
+                         qos: DispatchQoS = .default,
+                         attr: DispatchQueue.Attributes = .concurrent,
+                         frequency: DispatchQueue.AutoreleaseFrequency = .inherit,
+                         target: DispatchQueue? = nil,
+                         _ block: @escaping EmptyClosure) {
     
     DispatchQueue(label: label,
                   qos: qos,
                   attributes: attr,
                   autoreleaseFrequency: frequency,
                   target: target).async {
-        block()
+                    block()
     }
 }
 
 //MARK: - After
 
-func runAfter(time: Double,
-              _ block: @escaping EmptyClosure) {
+public func runAfter(time: Double, _ block: @escaping EmptyClosure) {
     
     let deadline = DispatchTime.now() + time
     DispatchQueue.main.asyncAfter(deadline: deadline, execute: block)
 }
 
-func runAfter(time: Double,
-              qos: DispatchQoS,
-              attr: DispatchQueue.Attributes = .concurrent,
-              frequency: DispatchQueue.AutoreleaseFrequency = .inherit,
-              target: DispatchQueue? = nil,
-              _ block: @escaping EmptyClosure) {
+public func runAfter(time: Double,
+                     qos: DispatchQoS,
+                     attr: DispatchQueue.Attributes = .concurrent,
+                     frequency: DispatchQueue.AutoreleaseFrequency = .inherit,
+                     target: DispatchQueue? = nil,
+                     _ block: @escaping EmptyClosure) {
     
     let deadline = DispatchTime.now() + time
     DispatchQueue(label: "",
