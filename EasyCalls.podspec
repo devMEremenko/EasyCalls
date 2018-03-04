@@ -12,19 +12,19 @@ Pod::Spec.new do |s|
     s.homepage              = 'https://github.com/devmeremenko/EasyCalls'
     s.license               = { :type => 'MIT', :file => 'LICENSE' }
     s.author                = { 'Maxim Eremenko' => 'devmeremenko@gmail.com' }
-    s.source                = { :git => 'https://github.com/devmeremenko/EasyCalls.git', :tag => s.version.to_s }
-    s.social_media_url      = 'https://www.linkedin.com/in/maxim-eremenko/'
+    s.source                = { :git => 'https://github.com/devmeremenko/EasyCalls.git' }
+    s.social_media_url      = 'https://twitter.com/eremenko_maxim/'
     s.ios.deployment_target = '8.0'
-    s.source_files          = 'EasyCalls/Classes/{Common}**/*{swift}'
+    s.source_files          = 'Classes/Calls/{Common}**/*.{h,m}'
     s.pod_target_xcconfig   = { 'SWIFT_WHOLE_MODULE_OPTIMIZATION' => 'YES' }
 
     s.subspec 'Queues' do |queues|
-        queues.source_files = 'EasyCalls/Classes/Calls/Queues/**/*.{swift}'
+        queues.source_files = 'Classes/Calls/{Queues}/**/*.{h,m}'
     end
 
     s.subspec 'Realm' do |realm|
-        realm.source_files = 'EasyCalls/Classes/Calls/Realm/**/*.{swift}'
-        realm.dependency 'RealmSwift'
+        realm.source_files = 'Classes/Calls/{Realm}/**/*.{h,m}'
+        realm.dependency 'RealmSwift', '~> 3.1.1'
     end
 
     s.frameworks = 'Foundation'
