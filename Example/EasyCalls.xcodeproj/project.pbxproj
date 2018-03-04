@@ -7,34 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		607FACEC1AFB9204008FA782 /* QueuesSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* QueuesSpec.swift */; };
-		910201592049644100F9720E /* Queues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910201582049644100F9720E /* Queues.swift */; };
-		916CEC862049944A0047FB02 /* TryCatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916CEC852049944A0047FB02 /* TryCatch.swift */; };
-		916CEC88204995750047FB02 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916CEC87204995750047FB02 /* Realm.swift */; };
-		916CEC8B2049A1BC0047FB02 /* SpecExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916CEC8A2049A1BC0047FB02 /* SpecExtensions.swift */; };
-		916CEC8E2049A3520047FB02 /* TryCatchSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916CEC8D2049A3520047FB02 /* TryCatchSpec.swift */; };
-		916CEC922049AC2E0047FB02 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 916CEC8F2049AC2E0047FB02 /* LICENSE */; };
-		916CEC942049AC2E0047FB02 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 916CEC912049AC2E0047FB02 /* README.md */; };
-		916CEC9D204A0AD30047FB02 /* RealmSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916CEC9C204A0AD30047FB02 /* RealmSpec.swift */; };
-		9176ACB3204C329A00446AB8 /* EasyCalls.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 9176ACB2204C329A00446AB8 /* EasyCalls.podspec */; };
+		9176ACBC204C379C00446AB8 /* TryCatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9176ACB7204C379C00446AB8 /* TryCatch.swift */; };
+		9176ACBD204C379C00446AB8 /* Queues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9176ACB9204C379C00446AB8 /* Queues.swift */; };
+		9176ACBE204C379C00446AB8 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9176ACBB204C379C00446AB8 /* Realm.swift */; };
+		9176ACC6204C37AD00446AB8 /* QueuesSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9176ACC1204C37AD00446AB8 /* QueuesSpec.swift */; };
+		9176ACC7204C37AD00446AB8 /* RealmSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9176ACC2204C37AD00446AB8 /* RealmSpec.swift */; };
+		9176ACC8204C37AD00446AB8 /* SpecExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9176ACC3204C37AD00446AB8 /* SpecExtensions.swift */; };
+		9176ACC9204C37AD00446AB8 /* TryCatchSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9176ACC4204C37AD00446AB8 /* TryCatchSpec.swift */; };
 		C8A2935E9EF5B23FB3DFF751 /* Pods_EasyCalls_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FAD2C1C377E522168D5767 /* Pods_EasyCalls_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		25B1D9940B30F42D5E4E78CC /* Pods-EasyCalls_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCalls_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyCalls_Tests/Pods-EasyCalls_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* EasyCalls_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyCalls_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* QueuesSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueuesSpec.swift; sourceTree = "<group>"; };
 		82FAD2C1C377E522168D5767 /* Pods_EasyCalls_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCalls_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		910201582049644100F9720E /* Queues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queues.swift; sourceTree = "<group>"; };
-		916CEC852049944A0047FB02 /* TryCatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryCatch.swift; sourceTree = "<group>"; };
-		916CEC87204995750047FB02 /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
-		916CEC8A2049A1BC0047FB02 /* SpecExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecExtensions.swift; sourceTree = "<group>"; };
-		916CEC8D2049A3520047FB02 /* TryCatchSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryCatchSpec.swift; sourceTree = "<group>"; };
 		916CEC8F2049AC2E0047FB02 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		916CEC912049AC2E0047FB02 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		916CEC9C204A0AD30047FB02 /* RealmSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmSpec.swift; sourceTree = "<group>"; };
 		9176ACB2204C329A00446AB8 /* EasyCalls.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = EasyCalls.podspec; path = ../EasyCalls.podspec; sourceTree = "<group>"; };
+		9176ACB7204C379C00446AB8 /* TryCatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TryCatch.swift; sourceTree = "<group>"; };
+		9176ACB9204C379C00446AB8 /* Queues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queues.swift; sourceTree = "<group>"; };
+		9176ACBB204C379C00446AB8 /* Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
+		9176ACC0204C37AD00446AB8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9176ACC1204C37AD00446AB8 /* QueuesSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueuesSpec.swift; sourceTree = "<group>"; };
+		9176ACC2204C37AD00446AB8 /* RealmSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmSpec.swift; sourceTree = "<group>"; };
+		9176ACC3204C37AD00446AB8 /* SpecExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecExtensions.swift; sourceTree = "<group>"; };
+		9176ACC4204C37AD00446AB8 /* TryCatchSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TryCatchSpec.swift; sourceTree = "<group>"; };
 		EED9A79CE791289287975D1A /* Pods-EasyCalls_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCalls_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyCalls_Tests/Pods-EasyCalls_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,8 +62,9 @@
 				916CEC8F2049AC2E0047FB02 /* LICENSE */,
 				9176ACB2204C329A00446AB8 /* EasyCalls.podspec */,
 				916CEC912049AC2E0047FB02 /* README.md */,
-				910201572049641000F9720E /* Classes */,
-				607FACE81AFB9204008FA782 /* Tests */,
+				9176ACB4204C379C00446AB8 /* Classes */,
+				9176ACBF204C37AD00446AB8 /* Tests */,
+				9176ACCA204C382800446AB8 /* Bundle */,
 				607FACD11AFB9204008FA782 /* Products */,
 				491A35FE9A79A04AE3BA566F /* Pods */,
 				C4ED2F7EB7B27674F6025AD5 /* Frameworks */,
@@ -81,98 +79,67 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
+		9176ACB4204C379C00446AB8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				916CEC9B204A0ABE0047FB02 /* Common */,
-				916CEC99204A0AAA0047FB02 /* Queues */,
-				916CEC9A204A0AB50047FB02 /* Realm */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-				916CEC8C2049A3390047FB02 /* Extensions */,
+				9176ACB5204C379C00446AB8 /* Calls */,
 			);
-			path = Tests;
+			name = Classes;
+			path = ../Classes;
 			sourceTree = "<group>";
 		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
+		9176ACB5204C379C00446AB8 /* Calls */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		910201572049641000F9720E /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				916CEC972049FC2B0047FB02 /* Calls */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		916CEC8C2049A3390047FB02 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				916CEC8A2049A1BC0047FB02 /* SpecExtensions.swift */,
-			);
-			name = Extensions;
-			sourceTree = "<group>";
-		};
-		916CEC952049FBF40047FB02 /* Queues */ = {
-			isa = PBXGroup;
-			children = (
-				910201582049644100F9720E /* Queues.swift */,
-			);
-			path = Queues;
-			sourceTree = "<group>";
-		};
-		916CEC962049FC0C0047FB02 /* Realm */ = {
-			isa = PBXGroup;
-			children = (
-				916CEC87204995750047FB02 /* Realm.swift */,
-			);
-			path = Realm;
-			sourceTree = "<group>";
-		};
-		916CEC972049FC2B0047FB02 /* Calls */ = {
-			isa = PBXGroup;
-			children = (
-				916CEC982049FCD20047FB02 /* Common */,
-				916CEC952049FBF40047FB02 /* Queues */,
-				916CEC962049FC0C0047FB02 /* Realm */,
+				9176ACB6204C379C00446AB8 /* Common */,
+				9176ACB8204C379C00446AB8 /* Queues */,
+				9176ACBA204C379C00446AB8 /* Realm */,
 			);
 			path = Calls;
 			sourceTree = "<group>";
 		};
-		916CEC982049FCD20047FB02 /* Common */ = {
+		9176ACB6204C379C00446AB8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				916CEC852049944A0047FB02 /* TryCatch.swift */,
+				9176ACB7204C379C00446AB8 /* TryCatch.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
 		};
-		916CEC99204A0AAA0047FB02 /* Queues */ = {
+		9176ACB8204C379C00446AB8 /* Queues */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* QueuesSpec.swift */,
+				9176ACB9204C379C00446AB8 /* Queues.swift */,
 			);
-			name = Queues;
+			path = Queues;
 			sourceTree = "<group>";
 		};
-		916CEC9A204A0AB50047FB02 /* Realm */ = {
+		9176ACBA204C379C00446AB8 /* Realm */ = {
 			isa = PBXGroup;
 			children = (
-				916CEC9C204A0AD30047FB02 /* RealmSpec.swift */,
+				9176ACBB204C379C00446AB8 /* Realm.swift */,
 			);
-			name = Realm;
+			path = Realm;
 			sourceTree = "<group>";
 		};
-		916CEC9B204A0ABE0047FB02 /* Common */ = {
+		9176ACBF204C37AD00446AB8 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				916CEC8D2049A3520047FB02 /* TryCatchSpec.swift */,
+				9176ACC1204C37AD00446AB8 /* QueuesSpec.swift */,
+				9176ACC2204C37AD00446AB8 /* RealmSpec.swift */,
+				9176ACC3204C37AD00446AB8 /* SpecExtensions.swift */,
+				9176ACC4204C37AD00446AB8 /* TryCatchSpec.swift */,
 			);
-			name = Common;
+			name = Tests;
+			path = ../Tests;
+			sourceTree = "<group>";
+		};
+		9176ACCA204C382800446AB8 /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				9176ACC0204C37AD00446AB8 /* Info.plist */,
+			);
+			path = Bundle;
 			sourceTree = "<group>";
 		};
 		C4ED2F7EB7B27674F6025AD5 /* Frameworks */ = {
@@ -246,9 +213,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				916CEC942049AC2E0047FB02 /* README.md in Resources */,
-				9176ACB3204C329A00446AB8 /* EasyCalls.podspec in Resources */,
-				916CEC922049AC2E0047FB02 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,13 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				916CEC88204995750047FB02 /* Realm.swift in Sources */,
-				916CEC8E2049A3520047FB02 /* TryCatchSpec.swift in Sources */,
-				607FACEC1AFB9204008FA782 /* QueuesSpec.swift in Sources */,
-				916CEC9D204A0AD30047FB02 /* RealmSpec.swift in Sources */,
-				910201592049644100F9720E /* Queues.swift in Sources */,
-				916CEC8B2049A1BC0047FB02 /* SpecExtensions.swift in Sources */,
-				916CEC862049944A0047FB02 /* TryCatch.swift in Sources */,
+				9176ACBD204C379C00446AB8 /* Queues.swift in Sources */,
+				9176ACC9204C37AD00446AB8 /* TryCatchSpec.swift in Sources */,
+				9176ACBE204C379C00446AB8 /* Realm.swift in Sources */,
+				9176ACC7204C37AD00446AB8 /* RealmSpec.swift in Sources */,
+				9176ACC6204C37AD00446AB8 /* QueuesSpec.swift in Sources */,
+				9176ACC8204C37AD00446AB8 /* SpecExtensions.swift in Sources */,
+				9176ACBC204C379C00446AB8 /* TryCatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +392,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = Tests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Bundle/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,7 +406,7 @@
 			baseConfigurationReference = 25B1D9940B30F42D5E4E78CC /* Pods-EasyCalls_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Tests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Bundle/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
