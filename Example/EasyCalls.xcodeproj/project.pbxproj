@@ -7,20 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		602AA9E4682185815531EACE /* Pods_LightyCalls_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C9635B6E4A2D5B41AB5D9B /* Pods_LightyCalls_Tests.framework */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		607FACEC1AFB9204008FA782 /* QueuesSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* QueuesSpec.swift */; };
+		910201592049644100F9720E /* Queues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910201582049644100F9720E /* Queues.swift */; };
+		916CEC862049944A0047FB02 /* TryCatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916CEC852049944A0047FB02 /* TryCatch.swift */; };
+		916CEC88204995750047FB02 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916CEC87204995750047FB02 /* Realm.swift */; };
+		916CEC8B2049A1BC0047FB02 /* SpecExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916CEC8A2049A1BC0047FB02 /* SpecExtensions.swift */; };
+		916CEC8E2049A3520047FB02 /* TryCatchSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916CEC8D2049A3520047FB02 /* TryCatchSpec.swift */; };
+		916CEC922049AC2E0047FB02 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 916CEC8F2049AC2E0047FB02 /* LICENSE */; };
+		916CEC942049AC2E0047FB02 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 916CEC912049AC2E0047FB02 /* README.md */; };
+		916CEC9D204A0AD30047FB02 /* RealmSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916CEC9C204A0AD30047FB02 /* RealmSpec.swift */; };
+		9176ACB3204C329A00446AB8 /* EasyCalls.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 9176ACB2204C329A00446AB8 /* EasyCalls.podspec */; };
+		C8A2935E9EF5B23FB3DFF751 /* Pods_EasyCalls_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FAD2C1C377E522168D5767 /* Pods_EasyCalls_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		21E300E41C9901931E961B78 /* Pods-LightyCalls_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightyCalls_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LightyCalls_Tests/Pods-LightyCalls_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		504193355B8A07912C084A7D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		51C9635B6E4A2D5B41AB5D9B /* Pods_LightyCalls_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightyCalls_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACE51AFB9204008FA782 /* LightyCalls_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightyCalls_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B1D9940B30F42D5E4E78CC /* Pods-EasyCalls_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCalls_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyCalls_Tests/Pods-EasyCalls_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		607FACE51AFB9204008FA782 /* EasyCalls_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyCalls_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		8527D41F11D7DBA48AC08653 /* LightyCalls.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LightyCalls.podspec; path = ../LightyCalls.podspec; sourceTree = "<group>"; };
-		930C167A8E42DEA695692991 /* Pods-LightyCalls_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightyCalls_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LightyCalls_Tests/Pods-LightyCalls_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		9330568DCB5FDE0599B0AE3B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* QueuesSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueuesSpec.swift; sourceTree = "<group>"; };
+		82FAD2C1C377E522168D5767 /* Pods_EasyCalls_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCalls_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		910201582049644100F9720E /* Queues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queues.swift; sourceTree = "<group>"; };
+		916CEC852049944A0047FB02 /* TryCatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryCatch.swift; sourceTree = "<group>"; };
+		916CEC87204995750047FB02 /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
+		916CEC8A2049A1BC0047FB02 /* SpecExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecExtensions.swift; sourceTree = "<group>"; };
+		916CEC8D2049A3520047FB02 /* TryCatchSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryCatchSpec.swift; sourceTree = "<group>"; };
+		916CEC8F2049AC2E0047FB02 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		916CEC912049AC2E0047FB02 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		916CEC9C204A0AD30047FB02 /* RealmSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmSpec.swift; sourceTree = "<group>"; };
+		9176ACB2204C329A00446AB8 /* EasyCalls.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = EasyCalls.podspec; path = ../EasyCalls.podspec; sourceTree = "<group>"; };
+		EED9A79CE791289287975D1A /* Pods-EasyCalls_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCalls_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyCalls_Tests/Pods-EasyCalls_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				602AA9E4682185815531EACE /* Pods_LightyCalls_Tests.framework in Frameworks */,
+				C8A2935E9EF5B23FB3DFF751 /* Pods_EasyCalls_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +53,8 @@
 		491A35FE9A79A04AE3BA566F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				21E300E41C9901931E961B78 /* Pods-LightyCalls_Tests.debug.xcconfig */,
-				930C167A8E42DEA695692991 /* Pods-LightyCalls_Tests.release.xcconfig */,
+				EED9A79CE791289287975D1A /* Pods-EasyCalls_Tests.debug.xcconfig */,
+				25B1D9940B30F42D5E4E78CC /* Pods-EasyCalls_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -47,7 +62,10 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				916CEC8F2049AC2E0047FB02 /* LICENSE */,
+				9176ACB2204C329A00446AB8 /* EasyCalls.podspec */,
+				916CEC912049AC2E0047FB02 /* README.md */,
+				910201572049641000F9720E /* Classes */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				491A35FE9A79A04AE3BA566F /* Pods */,
@@ -58,7 +76,7 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACE51AFB9204008FA782 /* LightyCalls_Tests.xctest */,
+				607FACE51AFB9204008FA782 /* EasyCalls_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,8 +84,11 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				916CEC9B204A0ABE0047FB02 /* Common */,
+				916CEC99204A0AAA0047FB02 /* Queues */,
+				916CEC9A204A0AB50047FB02 /* Realm */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				916CEC8C2049A3390047FB02 /* Extensions */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -80,20 +101,84 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
+		910201572049641000F9720E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8527D41F11D7DBA48AC08653 /* LightyCalls.podspec */,
-				9330568DCB5FDE0599B0AE3B /* README.md */,
-				504193355B8A07912C084A7D /* LICENSE */,
+				916CEC972049FC2B0047FB02 /* Calls */,
 			);
-			name = "Podspec Metadata";
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		916CEC8C2049A3390047FB02 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				916CEC8A2049A1BC0047FB02 /* SpecExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		916CEC952049FBF40047FB02 /* Queues */ = {
+			isa = PBXGroup;
+			children = (
+				910201582049644100F9720E /* Queues.swift */,
+			);
+			path = Queues;
+			sourceTree = "<group>";
+		};
+		916CEC962049FC0C0047FB02 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				916CEC87204995750047FB02 /* Realm.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		916CEC972049FC2B0047FB02 /* Calls */ = {
+			isa = PBXGroup;
+			children = (
+				916CEC982049FCD20047FB02 /* Common */,
+				916CEC952049FBF40047FB02 /* Queues */,
+				916CEC962049FC0C0047FB02 /* Realm */,
+			);
+			path = Calls;
+			sourceTree = "<group>";
+		};
+		916CEC982049FCD20047FB02 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				916CEC852049944A0047FB02 /* TryCatch.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		916CEC99204A0AAA0047FB02 /* Queues */ = {
+			isa = PBXGroup;
+			children = (
+				607FACEB1AFB9204008FA782 /* QueuesSpec.swift */,
+			);
+			name = Queues;
+			sourceTree = "<group>";
+		};
+		916CEC9A204A0AB50047FB02 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				916CEC9C204A0AD30047FB02 /* RealmSpec.swift */,
+			);
+			name = Realm;
+			sourceTree = "<group>";
+		};
+		916CEC9B204A0ABE0047FB02 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				916CEC8D2049A3520047FB02 /* TryCatchSpec.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 		C4ED2F7EB7B27674F6025AD5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				51C9635B6E4A2D5B41AB5D9B /* Pods_LightyCalls_Tests.framework */,
+				82FAD2C1C377E522168D5767 /* Pods_EasyCalls_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -101,9 +186,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACE41AFB9204008FA782 /* LightyCalls_Tests */ = {
+		607FACE41AFB9204008FA782 /* EasyCalls_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "LightyCalls_Tests" */;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "EasyCalls_Tests" */;
 			buildPhases = (
 				3964278015F63A971435E1D1 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
@@ -116,9 +201,9 @@
 			);
 			dependencies = (
 			);
-			name = LightyCalls_Tests;
+			name = EasyCalls_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* LightyCalls_Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* EasyCalls_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -131,10 +216,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -142,7 +223,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "LightyCalls" */;
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "EasyCalls" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -155,7 +236,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACE41AFB9204008FA782 /* LightyCalls_Tests */,
+				607FACE41AFB9204008FA782 /* EasyCalls_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -165,6 +246,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				916CEC942049AC2E0047FB02 /* README.md in Resources */,
+				9176ACB3204C329A00446AB8 /* EasyCalls.podspec in Resources */,
+				916CEC922049AC2E0047FB02 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +282,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LightyCalls_Tests/Pods-LightyCalls_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyCalls_Tests/Pods-EasyCalls_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6AE1A5E67947AEF9AD027D91 /* [CP] Embed Pods Frameworks */ = {
@@ -213,7 +297,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LightyCalls_Tests/Pods-LightyCalls_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyCalls_Tests/Pods-EasyCalls_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -223,7 +307,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				916CEC88204995750047FB02 /* Realm.swift in Sources */,
+				916CEC8E2049A3520047FB02 /* TryCatchSpec.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* QueuesSpec.swift in Sources */,
+				916CEC9D204A0AD30047FB02 /* RealmSpec.swift in Sources */,
+				910201592049644100F9720E /* Queues.swift in Sources */,
+				916CEC8B2049A1BC0047FB02 /* SpecExtensions.swift in Sources */,
+				916CEC862049944A0047FB02 /* TryCatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,12 +421,9 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21E300E41C9901931E961B78 /* Pods-LightyCalls_Tests.debug.xcconfig */;
+			baseConfigurationReference = EED9A79CE791289287975D1A /* Pods-EasyCalls_Tests.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -352,12 +439,9 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 930C167A8E42DEA695692991 /* Pods-LightyCalls_Tests.release.xcconfig */;
+			baseConfigurationReference = 25B1D9940B30F42D5E4E78CC /* Pods-EasyCalls_Tests.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
@@ -370,7 +454,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "LightyCalls" */ = {
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "EasyCalls" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
@@ -379,7 +463,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "LightyCalls_Tests" */ = {
+		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "EasyCalls_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,

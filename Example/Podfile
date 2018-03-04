@@ -1,7 +1,14 @@
 use_frameworks!
-target 'LightyCalls_Tests' do
-  pod 'LightyCalls', :path => '../'
+
+platform :ios, '8.0'
+
+inhibit_all_warnings!
+
+target 'EasyCalls_Tests' do
+
+  pod 'EasyCalls', :path => '../'
   
+  #TEST
   pod 'Quick', '~> 1.2.0'
-    pod 'Nimble', '~> 7.0.2'
+  pod 'Nimble', '~> 7.0.2'
 end
