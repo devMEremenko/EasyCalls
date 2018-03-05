@@ -114,11 +114,18 @@ The *error handling* is also supported by attaching an `error` closure.
 
 
 ### CocoaPods
-EasyCalls is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+EasyCalls is available through [CocoaPods](http://cocoapods.org).
+
+Each module works independently so you can install the modules you need right now
 
 ```ruby
-pod 'EasyCalls'
+
+pod 'EasyCalls/TryCatch'
+pod 'EasyCalls/Queues'
+pod 'EasyCalls/Realm'
+
+
+pod 'EasyCalls' # contains 'TryCatch' and 'Queues' by default
 ```
 
 
