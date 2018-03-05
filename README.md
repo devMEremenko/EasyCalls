@@ -13,9 +13,9 @@ This repository contains a number of methods over Swift API to use it safely. <b
 
 #### Contents
 
-- [`DispatchQueue` management ](##Queues)
-- [`Swift` errors handling](##Swift)
-- [`Realm`. Safe write and read transactions](##Realm)
+- [`DispatchQueue` management ](#queues)
+- [`Swift` errors handling](#swift-errors-handling)
+- [`Realm`. Safe write and read transactions](#realm)
 
 ## Queues
 
