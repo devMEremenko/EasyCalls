@@ -146,11 +146,11 @@ $ git submodule add https://github.com/devmeremenko/EasyCalls.git
 * Open the new EasyCalls folder, and drag the necessary sources into the Project Navigator of your project.
 
 
-### Author
+## Author
 
 [Maksym Eremenko](https://www.linkedin.com/in/maxim-eremenko/), devmeremenko@gmail.com
 
-### License
+## License
 
 EasyCalls is available under the MIT license. See the LICENSE file for more info.
 
