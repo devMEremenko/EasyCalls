@@ -2,6 +2,7 @@
 
 ![Build Status](https://travis-ci.org/devMEremenko/EasyCalls.svg?branch=master)
 [![codecov.io](https://codecov.io/github/devmeremenko/EasyCalls/coverage.svg?branch=master)](https://codecov.io/github/devmeremenko/EasyCalls?branch=master)
+[![codebeat badge](https://codebeat.co/badges/9a996a4d-e42e-43b7-ba9a-d18c4d361409)](https://codebeat.co/projects/github-com-devmeremenko-easycalls-master)
 [![Version](https://img.shields.io/cocoapods/v/EasyCalls.svg?style=flat)](http://cocoapods.org/pods/EasyCalls)
 [![License](https://img.shields.io/cocoapods/l/EasyCalls.svg?style=flat)](http://cocoapods.org/pods/EasyCalls)
 [![Platform](https://img.shields.io/cocoapods/p/EasyCalls.svg?style=flat)](http://cocoapods.org/pods/EasyCalls)
@@ -127,5 +128,30 @@ pod 'EasyCalls/Realm'
 
 pod 'EasyCalls' # contains 'TryCatch' and 'Queues' by default
 ```
+
+### Manually
+
+* Open up Terminal, `cd` into your top-level project directory, and run the following command *if* your project is not initialized as a git repository:
+
+```
+$ git init
+```
+
+* Add EasyCalls as a git [submodule](http://git-scm.com/docs/git-submodule) by running the following commands:
+
+```
+$ git submodule add https://github.com/devmeremenko/EasyCalls.git
+```
+
+* Open the new EasyCalls folder, and drag the necessary sources into the Project Navigator of your project.
+
+
+### Author
+
+[Maksym Eremenko](https://www.linkedin.com/in/maxim-eremenko/), devmeremenko@gmail.com
+
+### License
+
+EasyCalls is available under the MIT license. See the LICENSE file for more info.
 
 
