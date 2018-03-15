@@ -18,8 +18,9 @@ Pod::Spec.new do |s|
     s.pod_target_xcconfig   = { 'SWIFT_WHOLE_MODULE_OPTIMIZATION' => 'YES',
                                 'SWIFT_VERSION' => '4.0'}
 
-    s.subspec 'TryCatch' do |tryCatch|
-        tryCatch.source_files = 'Classes/Calls/TryCatch**/*.swift'
+    s.subspec 'Alert' do |alert|
+        alert.source_files = 'Classes/Calls/Alert/**/*.swift'
+        alert.frameworks = 'Foundation', 'UIKit'
     end
 
     s.subspec 'Queues' do |queues|
@@ -32,6 +33,10 @@ Pod::Spec.new do |s|
         realm.dependency 'EasyCalls/TryCatch'
         realm.dependency 'RealmSwift', '~> 3.1.1'
         realm.source_files = 'Classes/Calls/Realm/**/*.swift'
+    end
+
+    s.subspec 'TryCatch' do |tryCatch|
+        tryCatch.source_files = 'Classes/Calls/TryCatch**/*.swift'
     end
 
     s.frameworks = 'Foundation'
