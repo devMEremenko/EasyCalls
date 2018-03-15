@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
     s.name                  = 'EasyCalls'
     s.version               = '1.0.3'
-    s.summary               = 'Syntax sugar for Swift API'
+    s.summary               = 'This repository contains a number of methods over Swift API to use it safely.'
     s.description           = <<-DESC
         The pod simplifies using Swift API.
         It includes changing DispatchQueue and errors handing now.
@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
 
     s.subspec 'Alert' do |alert|
         alert.source_files = 'Classes/Calls/Alert/**/*.swift'
+        alert.dependency 'EasyCalls/Queues'
         alert.frameworks = 'Foundation', 'UIKit'
     end
 

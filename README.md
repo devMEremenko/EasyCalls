@@ -4,8 +4,11 @@
 [![codecov.io](https://codecov.io/github/devmeremenko/EasyCalls/coverage.svg?branch=master)](https://codecov.io/github/devmeremenko/EasyCalls?branch=master)
 [![codebeat badge](https://codebeat.co/badges/9a996a4d-e42e-43b7-ba9a-d18c4d361409)](https://codebeat.co/projects/github-com-devmeremenko-easycalls-master)
 [![Version](https://img.shields.io/cocoapods/v/EasyCalls.svg?style=flat)](http://cocoapods.org/pods/EasyCalls)
-[![License](https://img.shields.io/cocoapods/l/EasyCalls.svg?style=flat)](http://cocoapods.org/pods/EasyCalls)
 [![Platform](https://img.shields.io/cocoapods/p/EasyCalls.svg?style=flat)](http://cocoapods.org/pods/EasyCalls)
+[![GitHub license](https://img.shields.io/github/license/devmeremenko/EasyCalls.svg)](https://github.com/devMEremenko/EasyCalls/blob/master/LICENSE)
+[![GitHub forks](https://img.shields.io/github/forks/devmeremenko/EasyCalls.svg)](https://github.com/devmeremenko/EasyCalls/network)
+[![GitHub stars](https://img.shields.io/github/stars/devmeremenko/EasyCalls.svg)](https://github.com/devmeremenko/EasyCalls/stargazers)
+
 
 ### Hi there,
 
@@ -277,5 +280,3 @@ $ git submodule add https://github.com/devmeremenko/EasyCalls.git
 ## License
 
 EasyCalls is available under the MIT license. See the LICENSE file for more info.
-
-
