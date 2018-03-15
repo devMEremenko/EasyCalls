@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EasyCalls_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgF-EE-GwT">
+                                <rect key="frame" x="20" y="80" width="335" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Emh-Oe-qmK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Simple alert"/>
+                                <connections>
+                                    <action selector="showSimpleAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X4t-KK-bXr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeL-9W-4pz">
+                                <rect key="frame" x="20" y="144" width="335" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="8R3-DV-LvB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Complex alert"/>
+                                <connections>
+                                    <action selector="showOkCancelAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mQa-4h-gyQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rp0-Kj-8Vn">
+                                <rect key="frame" x="20" y="208" width="335" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Cb9-Zv-LHL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Custom Alert"/>
+                                <connections>
+                                    <action selector="showCustomAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CGY-Oo-fqy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VG3-Rq-tOc">
+                                <rect key="frame" x="20" y="272" width="335" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hyw-HF-IPT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Action Sheet"/>
+                                <connections>
+                                    <action selector="showActionSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mev-jq-b6u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2N-gH-akx">
+                                <rect key="frame" x="20" y="336" width="335" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Sef-1W-byM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Show your own alert"/>
+                                <connections>
+                                    <action selector="showOwnAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cOA-HR-Lw2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rp0-Kj-8Vn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3R6-um-p3T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AgF-EE-GwT" secondAttribute="trailing" constant="20" id="987-aO-DqU"/>
+                            <constraint firstItem="VG3-Rq-tOc" firstAttribute="top" secondItem="Rp0-Kj-8Vn" secondAttribute="bottom" constant="20" id="AVO-1J-OBz"/>
+                            <constraint firstItem="f2N-gH-akx" firstAttribute="top" secondItem="VG3-Rq-tOc" secondAttribute="bottom" constant="20" id="EXA-fZ-LaL"/>
+                            <constraint firstItem="zeL-9W-4pz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="H5e-de-6ev"/>
+                            <constraint firstItem="VG3-Rq-tOc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="J36-MX-sOY"/>
+                            <constraint firstItem="f2N-gH-akx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="M1r-xc-gwt"/>
+                            <constraint firstItem="Rp0-Kj-8Vn" firstAttribute="top" secondItem="zeL-9W-4pz" secondAttribute="bottom" constant="20" id="O3S-Fm-JsP"/>
+                            <constraint firstItem="zeL-9W-4pz" firstAttribute="top" secondItem="AgF-EE-GwT" secondAttribute="bottom" constant="20" id="RCG-5U-yU2"/>
+                            <constraint firstItem="AgF-EE-GwT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="T2m-3m-UaM"/>
+                            <constraint firstItem="AgF-EE-GwT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bCy-sW-vXb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rp0-Kj-8Vn" secondAttribute="trailing" constant="20" id="bOq-Jf-t5P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f2N-gH-akx" secondAttribute="trailing" constant="20" id="iEJ-Wq-jhm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zeL-9W-4pz" secondAttribute="trailing" constant="20" id="mzJ-ji-LRY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VG3-Rq-tOc" secondAttribute="trailing" constant="20" id="q4x-3o-wF7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

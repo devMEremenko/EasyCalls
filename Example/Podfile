@@ -4,6 +4,13 @@ platform :ios, '8.0'
 
 inhibit_all_warnings!
 
+target 'EasyCalls-Example' do
+    
+    pod 'EasyCalls/Alert', :path => '../'
+    pod 'EasyCalls/TryCatch', :path => '../'
+    pod 'EasyCalls/Queues', :path => '../'
+end
+
 target 'EasyCalls_Tests' do
 
   pod 'EasyCalls', :path => '../'

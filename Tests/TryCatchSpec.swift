@@ -17,6 +17,16 @@ fileprivate enum NetworkError: Error {
 class TryCatchSpec: QuickSpec {
     
     override func spec() {
+        testTryCatch()
+        testOptionals()
+    }
+}
+
+//MARK: - Try Catch
+
+fileprivate extension TryCatchSpec {
+    
+    func testTryCatch() {
         
         it("The exception should be caught") {
             
@@ -46,6 +56,42 @@ class TryCatchSpec: QuickSpec {
             }
             
             expect(block).notTo(throwError())
+        }
+    }
+}
+
+extension TryCatchSpec {
+    
+    func testOptionals() {
+        
+        describe("isExist") {
+            
+            it("Should return `true` when an error exists") {
+                
+                let error: Error? = NetworkError.general
+                expect(error.isExist).to(beTrue())
+            }
+            
+            it("Should return `false` when an error exists") {
+                
+                let error: Error? = nil
+                expect(error.isExist).to(beFalse())
+            }
+        }
+        
+        describe("isNil") {
+            
+            it("Should return `false` when an error exists") {
+                
+                let error: Error? = NetworkError.general
+                expect(error.isNil).to(beFalse())
+            }
+            
+            it("Should return `true` when an error exists") {
+                
+                let error: Error? = nil
+                expect(error.isNil).to(beTrue())
+            }
         }
     }
 }
