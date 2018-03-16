@@ -273,6 +273,12 @@ $ git submodule add https://github.com/devmeremenko/EasyCalls.git
 * Open the new EasyCalls folder, and drag the necessary sources into the Project Navigator of your project.
 
 
+**Do not forget to import the module**
+```swift
+import EasyCalls
+```
+
+
 ## Author
 
 [Maksym Eremenko](https://www.linkedin.com/in/maxim-eremenko/), devmeremenko@gmail.com
