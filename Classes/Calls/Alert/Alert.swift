@@ -25,27 +25,27 @@ public struct Configuration {
 
 public class Action {
     
-    typealias ActionHandler = (UIAlertAction) -> Void
+    public typealias ActionHandler = (UIAlertAction) -> Void
     
-    static var ok: UIAlertAction {
+    public static var ok: UIAlertAction {
         return UIAlertAction(title: Configuration.ok, style: .default, handler: nil)
     }
     
-    static func ok(_ handler: @escaping ActionHandler) -> UIAlertAction {
+    public static func ok(_ handler: @escaping ActionHandler) -> UIAlertAction {
         return UIAlertAction(title: Configuration.ok, style: .default, handler: handler)
     }
     
-    static var cancel: UIAlertAction {
+    public static var cancel: UIAlertAction {
         let style = Configuration.Action.cancelStyle
         return UIAlertAction(title: Configuration.cancel, style: style, handler: nil)
     }
     
-    static func cancel(_ handler: @escaping ActionHandler) -> UIAlertAction {
+    public static func cancel(_ handler: @escaping ActionHandler) -> UIAlertAction {
         let style = Configuration.Action.cancelStyle
         return UIAlertAction(title: Configuration.cancel, style: style, handler: handler)
     }
     
-    static func with(title: String? = nil,
+    public static func with(title: String? = nil,
                      style: UIAlertActionStyle = Configuration.Action.defaultStyle,
                      _ handler: @escaping ActionHandler) -> UIAlertAction {
         
