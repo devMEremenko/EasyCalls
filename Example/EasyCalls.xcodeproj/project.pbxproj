@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		733BF7C820CBD2E9B38084F0 /* Pods_EasyCalls_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F021736A18D9ACE9E91EF1E0 /* Pods_EasyCalls_Example.framework */; };
+		9121E21C2057E98F00814370 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9121E21B2057E98F00814370 /* Alert.swift */; };
+		9174A7FC20582CAE009B199A /* AlertSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9174A7FB20582CAE009B199A /* AlertSpec.swift */; };
+		9174A804205831C6009B199A /* Alert-UI-Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9174A803205831C6009B199A /* Alert-UI-Tests.swift */; };
+		9174A81020583214009B199A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9174A80F20583214009B199A /* AppDelegate.swift */; };
+		9174A81220583214009B199A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9174A81120583214009B199A /* ViewController.swift */; };
+		9174A81520583214009B199A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9174A81320583214009B199A /* Main.storyboard */; };
+		9174A81720583214009B199A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9174A81620583214009B199A /* Assets.xcassets */; };
+		9174A81A20583214009B199A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9174A81820583214009B199A /* LaunchScreen.storyboard */; };
+		9174A82D2058339A009B199A /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9121E21B2057E98F00814370 /* Alert.swift */; };
+		9174A82E2058339E009B199A /* Queues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9176ACF9204CB1FD00446AB8 /* Queues.swift */; };
+		9174A83420584AAC009B199A /* Alert+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9174A83320584AAC009B199A /* Alert+Extensions.swift */; };
 		9176ACC6204C37AD00446AB8 /* QueuesSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9176ACC1204C37AD00446AB8 /* QueuesSpec.swift */; };
 		9176ACC7204C37AD00446AB8 /* RealmSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9176ACC2204C37AD00446AB8 /* RealmSpec.swift */; };
 		9176ACC8204C37AD00446AB8 /* SpecExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9176ACC3204C37AD00446AB8 /* SpecExtensions.swift */; };
@@ -17,12 +29,37 @@
 		C8A2935E9EF5B23FB3DFF751 /* Pods_EasyCalls_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FAD2C1C377E522168D5767 /* Pods_EasyCalls_Tests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9174A835205851BE009B199A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9174A80C20583214009B199A;
+			remoteInfo = "EasyCalls-Example";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		25B1D9940B30F42D5E4E78CC /* Pods-EasyCalls_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCalls_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyCalls_Tests/Pods-EasyCalls_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* EasyCalls_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyCalls_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82FAD2C1C377E522168D5767 /* Pods_EasyCalls_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCalls_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83604AD4392910661247F628 /* Pods-EasyCalls-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCalls-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyCalls-Example/Pods-EasyCalls-Example.release.xcconfig"; sourceTree = "<group>"; };
+		8585168B3FDFF9BC4A1A664F /* Pods-EasyCalls-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCalls-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyCalls-Example/Pods-EasyCalls-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9121E21B2057E98F00814370 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		916CEC8F2049AC2E0047FB02 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		916CEC912049AC2E0047FB02 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9174A7FB20582CAE009B199A /* AlertSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSpec.swift; sourceTree = "<group>"; };
+		9174A801205831C6009B199A /* EasyCalls_UI_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyCalls_UI_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9174A803205831C6009B199A /* Alert-UI-Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert-UI-Tests.swift"; sourceTree = "<group>"; };
+		9174A805205831C6009B199A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9174A80D20583214009B199A /* EasyCalls-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EasyCalls-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9174A80F20583214009B199A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9174A81120583214009B199A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9174A81420583214009B199A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9174A81620583214009B199A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9174A81920583214009B199A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9174A81B20583214009B199A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9174A83320584AAC009B199A /* Alert+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+Extensions.swift"; sourceTree = "<group>"; };
 		9176ACB2204C329A00446AB8 /* EasyCalls.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = EasyCalls.podspec; path = ../EasyCalls.podspec; sourceTree = "<group>"; };
 		9176ACC0204C37AD00446AB8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9176ACC1204C37AD00446AB8 /* QueuesSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueuesSpec.swift; sourceTree = "<group>"; };
@@ -33,6 +70,7 @@
 		9176ACFB204CB1FD00446AB8 /* Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
 		9176ACFD204CB1FD00446AB8 /* TryCatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TryCatch.swift; sourceTree = "<group>"; };
 		EED9A79CE791289287975D1A /* Pods-EasyCalls_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCalls_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyCalls_Tests/Pods-EasyCalls_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F021736A18D9ACE9E91EF1E0 /* Pods_EasyCalls_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCalls_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +82,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9174A7FE205831C6009B199A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9174A80A20583214009B199A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				733BF7C820CBD2E9B38084F0 /* Pods_EasyCalls_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -52,6 +105,8 @@
 			children = (
 				EED9A79CE791289287975D1A /* Pods-EasyCalls_Tests.debug.xcconfig */,
 				25B1D9940B30F42D5E4E78CC /* Pods-EasyCalls_Tests.release.xcconfig */,
+				8585168B3FDFF9BC4A1A664F /* Pods-EasyCalls-Example.debug.xcconfig */,
+				83604AD4392910661247F628 /* Pods-EasyCalls-Example.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -65,6 +120,8 @@
 				9176ACB4204C379C00446AB8 /* Classes */,
 				9176ACBF204C37AD00446AB8 /* Tests */,
 				9176ACCA204C382800446AB8 /* Bundle */,
+				9174A80E20583214009B199A /* EasyCalls-Example */,
+				9174A802205831C6009B199A /* EasyCalls-UI-Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				491A35FE9A79A04AE3BA566F /* Pods */,
 				C4ED2F7EB7B27674F6025AD5 /* Frameworks */,
@@ -75,8 +132,41 @@
 			isa = PBXGroup;
 			children = (
 				607FACE51AFB9204008FA782 /* EasyCalls_Tests.xctest */,
+				9174A801205831C6009B199A /* EasyCalls_UI_Tests.xctest */,
+				9174A80D20583214009B199A /* EasyCalls-Example.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9121E21A2057E97D00814370 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				9121E21B2057E98F00814370 /* Alert.swift */,
+				9174A83320584AAC009B199A /* Alert+Extensions.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		9174A802205831C6009B199A /* EasyCalls-UI-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9174A803205831C6009B199A /* Alert-UI-Tests.swift */,
+				9174A805205831C6009B199A /* Info.plist */,
+			);
+			path = "EasyCalls-UI-Tests";
+			sourceTree = "<group>";
+		};
+		9174A80E20583214009B199A /* EasyCalls-Example */ = {
+			isa = PBXGroup;
+			children = (
+				9174A80F20583214009B199A /* AppDelegate.swift */,
+				9174A81120583214009B199A /* ViewController.swift */,
+				9174A81320583214009B199A /* Main.storyboard */,
+				9174A81620583214009B199A /* Assets.xcassets */,
+				9174A81820583214009B199A /* LaunchScreen.storyboard */,
+				9174A81B20583214009B199A /* Info.plist */,
+			);
+			path = "EasyCalls-Example";
 			sourceTree = "<group>";
 		};
 		9176ACB4204C379C00446AB8 /* Classes */ = {
@@ -91,6 +181,7 @@
 		9176ACBF204C37AD00446AB8 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				9174A7FB20582CAE009B199A /* AlertSpec.swift */,
 				9176ACC1204C37AD00446AB8 /* QueuesSpec.swift */,
 				9176ACC2204C37AD00446AB8 /* RealmSpec.swift */,
 				9176ACC3204C37AD00446AB8 /* SpecExtensions.swift */,
@@ -111,6 +202,7 @@
 		9176ACF7204CB1FD00446AB8 /* Calls */ = {
 			isa = PBXGroup;
 			children = (
+				9121E21A2057E97D00814370 /* Alert */,
 				9176ACF8204CB1FD00446AB8 /* Queues */,
 				9176ACFA204CB1FD00446AB8 /* Realm */,
 				9176ACFC204CB1FD00446AB8 /* TryCatch */,
@@ -146,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				82FAD2C1C377E522168D5767 /* Pods_EasyCalls_Tests.framework */,
+				F021736A18D9ACE9E91EF1E0 /* Pods_EasyCalls_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,20 +266,67 @@
 			productReference = 607FACE51AFB9204008FA782 /* EasyCalls_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9174A800205831C6009B199A /* EasyCalls_UI_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9174A806205831C6009B199A /* Build configuration list for PBXNativeTarget "EasyCalls_UI_Tests" */;
+			buildPhases = (
+				9174A7FD205831C6009B199A /* Sources */,
+				9174A7FE205831C6009B199A /* Frameworks */,
+				9174A7FF205831C6009B199A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9174A836205851BE009B199A /* PBXTargetDependency */,
+			);
+			name = EasyCalls_UI_Tests;
+			productName = EasyCalls_UI_Tests;
+			productReference = 9174A801205831C6009B199A /* EasyCalls_UI_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9174A80C20583214009B199A /* EasyCalls-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9174A82720583215009B199A /* Build configuration list for PBXNativeTarget "EasyCalls-Example" */;
+			buildPhases = (
+				EE6053DA3E1FF9230DB6D2D9 /* [CP] Check Pods Manifest.lock */,
+				9174A80920583214009B199A /* Sources */,
+				9174A80A20583214009B199A /* Frameworks */,
+				9174A80B20583214009B199A /* Resources */,
+				3D64AAA27469BD3ECCE1FD01 /* [CP] Embed Pods Frameworks */,
+				B0724CF1FC02592517FD6E69 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EasyCalls-Example";
+			productName = "EasyCalls-Example";
+			productReference = 9174A80D20583214009B199A /* EasyCalls-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = CocoaPods;
+				ORGANIZATIONNAME = "Maxim Eremenko";
 				TargetAttributes = {
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+					9174A800205831C6009B199A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9174A80C20583214009B199A;
+					};
+					9174A80C20583214009B199A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -203,7 +343,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				9174A80C20583214009B199A /* EasyCalls-Example */,
 				607FACE41AFB9204008FA782 /* EasyCalls_Tests */,
+				9174A800205831C6009B199A /* EasyCalls_UI_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -213,6 +355,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9174A7FF205831C6009B199A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9174A80B20583214009B199A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9174A81A20583214009B199A /* LaunchScreen.storyboard in Resources */,
+				9174A81720583214009B199A /* Assets.xcassets in Resources */,
+				9174A81520583214009B199A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +396,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3D64AAA27469BD3ECCE1FD01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EasyCalls-Example/Pods-EasyCalls-Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/EasyCalls-Queues/EasyCalls.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyCalls.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyCalls-Example/Pods-EasyCalls-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5627983F19C49785553DF233 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,7 +436,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-EasyCalls_Tests/Pods-EasyCalls_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/EasyCalls/EasyCalls.framework",
+				"${BUILT_PRODUCTS_DIR}/EasyCalls.default-Realm/EasyCalls.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
@@ -278,6 +455,39 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyCalls_Tests/Pods-EasyCalls_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B0724CF1FC02592517FD6E69 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyCalls-Example/Pods-EasyCalls-Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE6053DA3E1FF9230DB6D2D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyCalls-Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -287,15 +497,64 @@
 			files = (
 				9176ACC9204C37AD00446AB8 /* TryCatchSpec.swift in Sources */,
 				9176ACC7204C37AD00446AB8 /* RealmSpec.swift in Sources */,
+				9174A7FC20582CAE009B199A /* AlertSpec.swift in Sources */,
 				9176ACFE204CB1FD00446AB8 /* Queues.swift in Sources */,
 				9176ACC6204C37AD00446AB8 /* QueuesSpec.swift in Sources */,
 				9176AD00204CB1FD00446AB8 /* TryCatch.swift in Sources */,
 				9176ACC8204C37AD00446AB8 /* SpecExtensions.swift in Sources */,
+				9121E21C2057E98F00814370 /* Alert.swift in Sources */,
 				9176ACFF204CB1FD00446AB8 /* Realm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9174A7FD205831C6009B199A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9174A804205831C6009B199A /* Alert-UI-Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9174A80920583214009B199A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9174A82D2058339A009B199A /* Alert.swift in Sources */,
+				9174A83420584AAC009B199A /* Alert+Extensions.swift in Sources */,
+				9174A81220583214009B199A /* ViewController.swift in Sources */,
+				9174A81020583214009B199A /* AppDelegate.swift in Sources */,
+				9174A82E2058339E009B199A /* Queues.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9174A836205851BE009B199A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9174A80C20583214009B199A /* EasyCalls-Example */;
+			targetProxy = 9174A835205851BE009B199A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9174A81320583214009B199A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9174A81420583214009B199A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9174A81820583214009B199A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9174A81920583214009B199A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		607FACED1AFB9204008FA782 /* Debug */ = {
@@ -429,6 +688,100 @@
 			};
 			name = Release;
 		};
+		9174A807205831C6009B199A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "EasyCalls-UI-Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maxim.eremenko.EasyCalls-UI-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "EasyCalls-Example";
+			};
+			name = Debug;
+		};
+		9174A808205831C6009B199A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "EasyCalls-UI-Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maxim.eremenko.EasyCalls-UI-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "EasyCalls-Example";
+			};
+			name = Release;
+		};
+		9174A82820583215009B199A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8585168B3FDFF9BC4A1A664F /* Pods-EasyCalls-Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "EasyCalls-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maxim.eremenko.EasyCalls-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9174A82920583215009B199A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83604AD4392910661247F628 /* Pods-EasyCalls-Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "EasyCalls-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maxim.eremenko.EasyCalls-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -446,6 +799,24 @@
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,
 				607FACF41AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9174A806205831C6009B199A /* Build configuration list for PBXNativeTarget "EasyCalls_UI_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9174A807205831C6009B199A /* Debug */,
+				9174A808205831C6009B199A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9174A82720583215009B199A /* Build configuration list for PBXNativeTarget "EasyCalls-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9174A82820583215009B199A /* Debug */,
+				9174A82920583215009B199A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

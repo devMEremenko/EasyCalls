@@ -19,3 +19,14 @@ public func tryCatch(_ closure: ThrowableClosure,
         failure?(error)
     }
 }
+
+public extension Optional where Wrapped == Error {
+    
+    var isExist: Bool {
+        return self != nil
+    }
+    
+    var isNil: Bool {
+        return self == nil
+    }
+}
