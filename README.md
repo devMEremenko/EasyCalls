@@ -68,7 +68,7 @@ The `toMain` call safely dispatches execution to the main queue.<br /><br />
 Since being on the main thread does not guarantee to be in the main queue, the `toMain` call checks whether the current queue is main. The operations of the main queue are always executed on the main thread.<br />
 As described in the [libdispatch](https://github.com/apple/swift-corelibs-libdispatch/commit/e64e4b962e1f356d7561e7a6103b424f335d85f6), `dispatch_sync` performs work on the current queue. It can cause a situation when the main queue will wait for completion of another sync operation.
 
-Here is an example when the main thread is able to execute operations from other queues:
+Here is an example when the main thread is able to execute operations **from other queues**:
 
 ```swift
 DispatchQueue.main.async {
