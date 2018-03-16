@@ -170,7 +170,7 @@ show(message: "Message", actions: Action.ok, Action.cancel)
 show(title: "Title", message: "Message", actions: Action.ok, Action.cancel)
 ```
 
-Actions Handling
+**Actions Handling**
 
 ```swift
 let ok = Action.ok { _ in
@@ -187,7 +187,7 @@ show(title: "Alert with ok/cancel buttons", actions: cancel, ok)
 The `Action` factory can be used to create a `UIAlertAction` or you can pass your own.
 
 ```swift
-let continue = Action.with(title: "Continue") { action in
+let next = Action.with(title: "Next") { action in
     // handle
 }
 
@@ -195,17 +195,17 @@ let delete = UIAlertAction(title: "Delete", style: .destructive) { _ in
     // handle
 }
 
-show(title: "Are you sure?", actions: continue, delete)
+show(title: "Are you sure?", actions: next, delete)
 ```
 
-Full control on the alert presentation
+**Full control on the alert presentation**
 ```swift
 show(title: "Title", message: "Message", style: .actionSheet, completion: {
     // That is called when the alert has been presented
 }, actions: [action])
 ```
 
-**Please note, the `actions` parameter takes *Array* of actions instead of a variadic function**
+Please note, the `actions` parameter **takes *Array* of actions instead of a variadic function**
 
 
 Presentation of the custom alert
