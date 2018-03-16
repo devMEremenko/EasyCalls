@@ -239,6 +239,11 @@ public struct Configuration {
 
 ## Installation
 
+**Do not forget to import the module**
+```swift
+import EasyCalls
+```
+
 
 ### CocoaPods
 EasyCalls is available through [CocoaPods](http://cocoapods.org).
@@ -271,12 +276,6 @@ $ git submodule add https://github.com/devmeremenko/EasyCalls.git
 ```
 
 * Open the new EasyCalls folder, and drag the necessary sources into the Project Navigator of your project.
-
-
-**Do not forget to import the module**
-```swift
-import EasyCalls
-```
 
 
 ## Author
