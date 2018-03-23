@@ -37,7 +37,7 @@ public extension DispatchQueue {
          Being on the main thread does not guarantee to be on the main queue.
          It means, if the current queue is not main, the execution will be moved to the main queue.
          
-         Check out more info at https://github.com/devMEremenko/EasyCalls#dispatchqueue.tomain-
+         Check out more info at https://github.com/devMEremenko/EasyCalls#dispatchqueuetomain-
          **/
         
         if DispatchQueue.isMainQueue {

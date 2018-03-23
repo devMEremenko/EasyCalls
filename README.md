@@ -64,7 +64,7 @@ DispatchQueue.runAfter(time: 1,
 ```
 
 ## DispatchQueue.toMain <br />
-The `DispatchQueue.toMain` call safely dispatches execution to the main queue.<br /><br />
+`DispatchQueue.toMain` call safely dispatches execution to the main queue.<br /><br />
 Since being on the main thread does not guarantee to be on the main queue, the `DispatchQueue.toMain` call checks whether the current queue is main. The operations of the main queue are always executed on the main thread.<br />
 As described in the [libdispatch](https://github.com/apple/swift-corelibs-libdispatch/commit/e64e4b962e1f356d7561e7a6103b424f335d85f6), `dispatch_sync` performs work on the current queue. It can cause a situation when the main queue will wait for completion of another sync operation.
 
@@ -276,6 +276,12 @@ $ git submodule add https://github.com/devmeremenko/EasyCalls.git
 ```
 
 * Open the new EasyCalls folder, and drag the necessary sources into the Project Navigator of your project.
+
+## Change Log
+
+|  Version  | Function |             Description            |              Migration               |
+| ---------- | ---------- | -----------------------------  | -------------------------------|
+|    1.2.0    |  Queues  | **Extensions** for `DispatchQueue` were used instead of **global functions**.<br /><br /> The `SpecificKey` for the main queue is set **only once** now. | Please add `DispatchQueue.` expression before all `toMain` calls.|
 
 
 ## Author
