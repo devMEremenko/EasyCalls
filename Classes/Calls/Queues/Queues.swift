@@ -34,8 +34,10 @@ public extension DispatchQueue {
     static func toMain(_ block: @escaping Empty) {
         
         /**
-         Being on the main thread does not guarantee to be in the main queue.
+         Being on the main thread does not guarantee to be on the main queue.
          It means, if the current queue is not main, the execution will be moved to the main queue.
+         
+         Check out more info at https://github.com/devMEremenko/EasyCalls#dispatchqueue.tomain-
          **/
         
         if DispatchQueue.isMainQueue {

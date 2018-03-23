@@ -26,15 +26,15 @@ This repository contains a number of methods over Swift API to use it safely. <b
 These methods are used to dispatch execution to the specified queue.
 
 ```swift
-toMain {
+DispatchQueue.toMain {
     // update UI
 }
 
-toBackground {
+DispatchQueue.toBackground {
     // load data
 }
 
-runAfter(time: 1) {
+DispatchQueue.runAfter(time: 1) {
     // performs work on the main queue after 1 sec
 }
 ```
@@ -42,30 +42,30 @@ runAfter(time: 1) {
 Customization
 
 ```swift
-toBackground(qos: .utility) { // Separate queue }
+DispatchQueue.toBackground(qos: .utility) { // Separate queue }
 
-toBackground(label: "",
-             qos: .background,
-             attr: .concurrent,
-             frequency: .inherit,
-             target: DispatchQueue.global()) { // Separate queue }
+DispatchQueue.toBackground(label: "",
+              qos: .background,
+              attr: .concurrent,
+              frequency: .inherit,
+              target: DispatchQueue.global()) { // Separate queue }
 ```
 
 ```swift
-runAfter(time: 1) { // Main thread }
+DispatchQueue.runAfter(time: 1) { // Main thread }
 
-runAfter(time: 1, qos: .userInteractive) { // Separate queue }
+DispatchQueue.runAfter(time: 1, qos: .userInteractive) { // Separate queue }
 
-runAfter(time: 1,
-         qos: .userInteractive,
-         attr: .concurrent,
-         frequency: .inherit,
-         target: DispatchQueue.global()) { // Separate queue }
+DispatchQueue.runAfter(time: 1,
+              qos: .userInteractive,
+              attr: .concurrent,
+              frequency: .inherit,
+              target: DispatchQueue.global()) { // Separate queue }
 ```
 
-#### toMain <br />
-The `toMain` call safely dispatches execution to the main queue.<br /><br />
-Since being on the main thread does not guarantee to be in the main queue, the `toMain` call checks whether the current queue is main. The operations of the main queue are always executed on the main thread.<br />
+## DispatchQueue.toMain <br />
+The `DispatchQueue.toMain` call safely dispatches execution to the main queue.<br /><br />
+Since being on the main thread does not guarantee to be on the main queue, the `DispatchQueue.toMain` call checks whether the current queue is main. The operations of the main queue are always executed on the main thread.<br />
 As described in the [libdispatch](https://github.com/apple/swift-corelibs-libdispatch/commit/e64e4b962e1f356d7561e7a6103b424f335d85f6), `dispatch_sync` performs work on the current queue. It can cause a situation when the main queue will wait for completion of another sync operation.
 
 Here is an example when the main thread is able to execute operations **from other queues**:
@@ -80,21 +80,21 @@ DispatchQueue.main.async {
             // The thread is Main, but the current queue is NOT Main.
             // UI should NOT be updated here.
             
-            // The 'toMain' call prevents this situation.
+            // The 'DispatchQueue.toMain' call prevents this situation.
         }
     }
 }
 ```
 
-To sum up, `toMain` guarantees that the passed block will be executed on the main queue and, therefore, on the main thread.
+To sum up, `DispatchQueue.toMain` guarantees that the passed block will be executed on the main queue and, therefore, on the main thread.
 In addition, if the current queue and thread are not main, the operation will be synchronously added to the main queue to prevent a race condition.
 
 
-#### toBackground
-`toBackground` asynchronously dispatches an execution to the separate queue with `default` QoS.
+## DispatchQueue.toBackground
+`DispatchQueue.toBackground` asynchronously dispatches an execution to the separate queue with `default` QoS.
 
-#### runAfter
-The `runAfter(time: 1)` call performs a block on the main queue after the passed time.<br />
+## DispatchQueue.runAfter
+The `DispatchQueue.runAfter(time: 1)` call performs a block on the main queue after the passed time.<br />
 However, `runAfter(time: qos:)` with specified `QoS` performs the given block on the **separate queue**. Do not update UI on it.
 
 ## Swift Errors Handling
@@ -151,7 +151,7 @@ The *error handling* is also supported by attaching an `error` closure.
 
 There is a number of calls to present `UIAlertController` (including `ActionSheet`)<br />
 * it is implemented as an extension for `UIViewController`
-* uses `toMain` under the hood to guarantee a presentation on the main queue
+* uses `DispatchQueue.toMain` under the hood to guarantee a presentation on the main queue
 * parameters of the `show()` method can be combined in different ways
 
 ```swift
