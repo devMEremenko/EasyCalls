@@ -288,7 +288,7 @@ $ git submodule add https://github.com/devmeremenko/EasyCalls.git
 
 
 ## Author
-
+ 
 [Maksym Eremenko](https://www.linkedin.com/in/maxim-eremenko/), devmeremenko@gmail.com
 
 ## License
