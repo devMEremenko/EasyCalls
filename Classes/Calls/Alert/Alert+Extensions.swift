@@ -65,10 +65,10 @@ public extension UIViewController {
     func show(title: String?,
               message: String?,
               style: UIAlertControllerStyle = Configuration.Alert.style,
-              completion: EmptyClosure?,
+              completion: Empty?,
               actions: [UIAlertAction]) {
         
-        toMain {
+        DispatchQueue.toMain {
             let alert = UIAlertController(title: title,
                                           message: message,
                                           preferredStyle: style)
@@ -80,8 +80,8 @@ public extension UIViewController {
         }
     }
     
-    func show(alert: UIAlertController, _ completion: EmptyClosure? = nil) {
-        toMain {
+    func show(alert: UIAlertController, _ completion: Empty? = nil) {
+        DispatchQueue.toMain {
             self.present(alert, animated: true, completion: completion)
         }
     }
