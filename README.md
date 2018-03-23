@@ -279,7 +279,7 @@ $ git submodule add https://github.com/devmeremenko/EasyCalls.git
 
 ## Change Log
 
-The `Version` is the same for **CocoaPods** and **Git Tag**.
+`Version` is the same for **CocoaPods** and **Git Tag**.
 
 |  Version  | Function |             Description            |              Migration               |
 | ---------- | ---------- | -----------------------------  | -------------------------------|
