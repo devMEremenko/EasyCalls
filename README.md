@@ -282,6 +282,9 @@ $ git submodule add https://github.com/devmeremenko/EasyCalls.git
 |  Version  | Function |             Description            |              Migration               |
 | ---------- | ---------- | -----------------------------  | -------------------------------|
 |    1.2.0    |  Queues  | **Extensions** for `DispatchQueue` were used instead of **global functions**.<br /><br /> The `SpecificKey` for the main queue is set **only once** now. | Please add `DispatchQueue.` expression before all `toMain` calls.|
+|    1.1.1    |  Alert  | `EasyCalls/Alert` were added |                                |
+
+The `Version` is the same for **CocoaPods** and **Git Tag**.
 
 
 ## Author
