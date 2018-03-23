@@ -30,9 +30,9 @@ extension QueuesSpec {
             
             waitUntil(timeout: 20, action: { done in
                 DispatchQueue(label: "").async {
-                    toMain {
+                    DispatchQueue.toMain {
                         DispatchQueue(label: "").sync {
-                            toMain {
+                            DispatchQueue.toMain {
                                 self.expectMain(done)
                             }
                         }
@@ -44,8 +44,8 @@ extension QueuesSpec {
         it("The operation should be completed on the main after recursive call") {
             waitUntil { done in
                 DispatchQueue(label: "").sync {
-                    toMain {
-                        toMain {
+                    DispatchQueue.toMain {
+                        DispatchQueue.toMain {
                             self.expectMain(done)
                         }
                     }
@@ -66,7 +66,7 @@ extension QueuesSpec {
             it("1. The operation should NOT be completed on the Main thread", closure: {
                 
                 waitUntil { done in
-                    toBackground {
+                    DispatchQueue.toBackground {
                         self.expectBackground(done)
                     }
                 }
@@ -75,7 +75,7 @@ extension QueuesSpec {
             it("2. The operation should NOT be completed on the Main thread", closure: {
                 
                 waitUntil { done in
-                    toBackground(label: "", qos: .userInteractive, {
+                    DispatchQueue.toBackground(label: "", qos: .userInteractive, {
                         self.expectBackground(done)
                     })
                 }
@@ -94,7 +94,7 @@ extension QueuesSpec {
             
             it("The block should be called late on the Main queue", closure: {
                 waitUntil { done in
-                    runAfter(time: 0.1, {
+                    DispatchQueue.runAfter(time: 0.1, {
                         self.expectMain(done)
                     })
                 }
@@ -102,7 +102,7 @@ extension QueuesSpec {
             
             it("The block should be called late with Background QoS", closure: {
                 waitUntil { done in
-                    runAfter(time: 0.2, qos: .background, {
+                    DispatchQueue.runAfter(time: 0.2, qos: .background, {
                         self.expectBackground(done)
                     })
                 }
@@ -110,7 +110,7 @@ extension QueuesSpec {
             
             it("The block should be called late on the Main queue", closure: {
                 waitUntil { done in
-                    runAfter(time: 0.3,
+                    DispatchQueue.runAfter(time: 0.3,
                              qos: .background,
                              attr: .concurrent,
                              frequency: .inherit,

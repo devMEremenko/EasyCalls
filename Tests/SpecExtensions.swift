@@ -12,7 +12,7 @@ import Nimble
 
 extension QuickSpec {
     
-    func expectMain(_ done: @escaping EmptyClosure) {
+    func expectMain(_ done: @escaping Empty) {
         
         let isMain = DispatchQueue.isMainQueue
         
@@ -23,7 +23,7 @@ extension QuickSpec {
         }
     }
     
-    func expectBackground(_ done: @escaping EmptyClosure) {
+    func expectBackground(_ done: @escaping Empty) {
         
         let isMain = DispatchQueue.isMainQueue
         
