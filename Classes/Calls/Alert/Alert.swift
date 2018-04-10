@@ -65,4 +65,8 @@ public class Action {
         
         return UIAlertAction(title: title, style: style, handler: handler)
     }
+    
+    public static func field(_ action : @escaping TextFieldAction) -> TextFieldAction {
+        return action
+    }
 }

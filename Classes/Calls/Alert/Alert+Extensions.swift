@@ -22,6 +22,8 @@
 
 import UIKit
 
+public typealias TextFieldAction = (UITextField) -> ()
+
 public extension UIViewController {
     
     func show(message: String?, actions: UIAlertAction...) {
@@ -30,6 +32,7 @@ public extension UIViewController {
              message: message,
              style: Configuration.Alert.style,
              completion: nil,
+             textFields: nil,
              actions: actions)
     }
     
@@ -41,6 +44,7 @@ public extension UIViewController {
              message: nil,
              style: Configuration.Alert.style,
              completion: nil,
+             textFields: nil,
              actions: actions)
     }
     
@@ -50,6 +54,7 @@ public extension UIViewController {
              message: nil,
              style: Configuration.Alert.style,
              completion: nil,
+             textFields: nil,
              actions: actions)
     }
     
@@ -61,6 +66,20 @@ public extension UIViewController {
              message: message,
              style: Configuration.Alert.style,
              completion: nil,
+             textFields: nil,
+             actions: actions)
+    }
+    
+    func show(title: String?,
+              message: String?,
+              textFields: [TextFieldAction],
+              actions: UIAlertAction...) {
+        
+        show(title: title,
+             message: message,
+             style: Configuration.Alert.style,
+             completion: nil,
+             textFields: textFields,
              actions: actions)
     }
     
@@ -73,6 +92,7 @@ public extension UIViewController {
              message: message,
              style: style,
              completion: nil,
+             textFields: nil,
              actions: actions)
     }
     
@@ -80,12 +100,21 @@ public extension UIViewController {
               message: String?,
               style: UIAlertControllerStyle = Configuration.Alert.style,
               completion: Empty?,
+              textFields: [TextFieldAction]? = nil,
               actions: [UIAlertAction]) {
         
         DispatchQueue.toMain {
             let alert = UIAlertController(title: title,
                                           message: message,
                                           preferredStyle: style)
+            
+            
+            if let fields = textFields {
+                for item in fields {
+                    alert.addTextField(configurationHandler: item)
+                }
+            }
+            
             for item in actions {
                 alert.addAction(item)
             }
