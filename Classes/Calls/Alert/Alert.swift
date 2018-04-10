@@ -70,3 +70,27 @@ public class Action {
         return action
     }
 }
+
+public extension UIAlertAction {
+    
+    private struct AssociatedKeys {
+        static var actionWrapper = "actionWrapper"
+    }
+    
+    weak var handler: UIAlertController? {
+        
+        get {
+            let object = objc_getAssociatedObject(self, &AssociatedKeys.actionWrapper)
+            return object as? UIAlertController
+        }
+        
+        set (newValue) {
+            
+            let policy = objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN
+            objc_setAssociatedObject(self,
+                                     &AssociatedKeys.actionWrapper,
+                                     newValue,
+                                     policy)
+        }
+    }
+}

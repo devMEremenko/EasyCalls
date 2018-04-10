@@ -108,7 +108,6 @@ public extension UIViewController {
                                           message: message,
                                           preferredStyle: style)
             
-            
             if let fields = textFields {
                 for item in fields {
                     alert.addTextField(configurationHandler: item)
@@ -116,6 +115,7 @@ public extension UIViewController {
             }
             
             for item in actions {
+                item.handler = alert
                 alert.addAction(item)
             }
             
