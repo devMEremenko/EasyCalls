@@ -23,7 +23,7 @@
 Pod::Spec.new do |s|
 
     s.name                  = 'EasyCalls'
-    s.version               = '1.2.1'
+    s.version               = '1.2.2'
     s.summary               = 'This repository contains a number of methods over Swift API to use it safely.'
     s.description           = <<-DESC
         The pod simplifies using Swift API.
