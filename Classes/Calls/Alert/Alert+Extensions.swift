@@ -22,8 +22,6 @@
 
 import UIKit
 
-public typealias TextFieldAction = (UITextField) -> ()
-
 public extension UIViewController {
     
     func show(message: String?, actions: UIAlertAction...) {
