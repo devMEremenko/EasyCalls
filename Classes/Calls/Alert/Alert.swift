@@ -22,6 +22,8 @@
 
 import UIKit
 
+public typealias TextFieldAction = (UITextField) -> ()
+
 public struct Configuration {
     
     public static var ok: String = "OK"
